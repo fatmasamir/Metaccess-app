@@ -1,0 +1,125 @@
+:root {
+  // -- main colors
+  --first-color: #5fad51;
+  --gray-first-color: #5fad51;
+  --second-color: #030000;
+  --third-color: #094e81;
+  --gray-third-color: #f2f3fe;
+  --white-color: #ffffff;
+  --gray-color: #f3f4f5;
+  --gray-blue-color: #f9f9fe;
+  --gray-blue-white-color: #fbfbff;
+  --second-gray-color: #edecf1;
+  --little-gray-color: #f9f9fea3;
+  --footer-background: #191919;
+  --second-background: #f5f6fa;
+  --third-background: #f2f2f7;
+  --fourth-background: #e9e9e9;
+
+  // border color
+  --first-border-color: #ced4e8;
+  --second-border-color: #c1bdcc;
+  --third-border-color: #e3e3e3;
+  --gray-border-color: #afafaf;
+  --second-gray-border-color: #dcddeb;
+  --gray-blue-border-color: #9396be;
+
+  // rank
+  --rank-first: var(--first-color);
+  --rank-second: #ed6a1c;
+  --rank-third: #ed991c;
+  --rank-init: #1caded;
+
+  // status
+  --status-pending: #1c92ed;
+  --status-info: #ed701c;
+  --status-rejected: var(--first-color);
+  --status-published: #09c77b;
+
+  // button
+  --first-button-color: #515151;
+  --second-button-color: #858585;
+  --button-border: #dfdfdf;
+  --second-button-border: #ababab;
+  --first-button-background: #f3f3f3;
+  --report-background: #ed771c;
+  --download-background: #00db84;
+  --confirm-input-background: #d1d1d1;
+  --success-button-color: #198754;
+  --cancel-button-color: #dc3545;
+  --secondary-button-color: #6c757d;
+  --gray-button-color: #8f8f8f;
+  --gray-blue-button-color: #1c8bed29;
+
+  // nav
+  --nav-icon-color: #808080;
+
+  // text
+  --first-text-color: #000000;
+  --second-text-color: #959595;
+  --third-text-color: #6a6e83;
+  --fourth-text-color: #707070;
+  --fifth-text-color: #777777;
+  --orange-text-color: #f4a71d;
+  --text-gray-color: #828282;
+  --text-red-color: red;
+
+  // breadcrumb
+  --page-home-dis: #242a37;
+  --page-child: #6a6e83;
+
+  // overlay color
+  --overlay: #00000082;
+  --box-overlay: #00000059;
+  --hard-overlay: #000000cc;
+
+  // socail media
+  --setting-icon-color: #c1c1c1;
+  --twitter-color: #1da1f2;
+  --youtube-color: #ff0000;
+  --instagram-color: #fd1d1d;
+  --facebook-color: #4267b2;
+  --google-color: #dd4b39;
+  --tiktok-color: #fe2c55;
+
+  // alerts
+  --success-background: #4fd69c;
+  --success-color: #fff;
+
+  --danger-background: #f75676;
+  --danger-color: #fff;
+
+  --warn-background: #fb8f2433;
+  --warn-hard-background: #ffc107;
+  --warn-color: #fff;
+
+  // icons
+  --icon-green-background: rgb(5, 219, 133, 0.16);
+  --icon-blue-background: rgb(33, 131, 217, 0.16);
+  --icon-red-background: rgb(217, 71, 33, 0.16);
+
+  // -- border radius
+  --main-border-radius: 8px;
+
+  // -- main transition
+  --main-transition: 0.3s;
+
+  // -- box shaodow
+  --main-box-shadow: 0 10px 15px -3px #0000001a;
+
+  // -- margin between sections
+  --margin-between-sections: 40px;
+
+  // -- padding between sections
+  --padding-between-sections: 60px;
+}
+
+// -- grid
+$grid: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

@@ -1,0 +1,108 @@
+@import "@/assets/scss/_variables.scss";
+@import "@/assets/scss/_functions.scss";
+.is-ar {
+  .main-app {
+    .component_wrapper {
+      // margin-right: 16.666667%;
+      @media screen and (max-width: map-get($grid, xl)) {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item {
+    a.router-link-active,
+    a:hover {
+      color: var(--third-color) !important;
+      text-decoration: none !important;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "<";
+    float: right !important;
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+    color: var(--third-color);
+  }
+  .input-group {
+    .form-control {
+      border-bottom-right-radius: 8px !important;
+      border-top-right-radius: 8px !important;
+    }
+    button {
+      border-bottom-left-radius: 8px !important;
+      border-top-left-radius: 8px !important;
+    }
+  }
+  .followers-boxes {
+    ol {
+      li {
+        &::before {
+          text-align: left;
+        }
+      }
+    }
+  }
+  // .vs--searchable .vs__dropdown-toggle {
+  //   direction: ltr;
+  // }
+  .apexcharts-legend-text {
+    padding-right: 5px;
+  }
+  .form-select {
+    padding: 8px 10px;
+    background-position: left 0.75rem center !important;
+  }
+  textarea {
+    text-align: right !important;
+  }
+  // .domin_input {
+  //   border-top-left-radius: 0 !important;
+  //   border-bottom-left-radius: 0 !important;
+  // }
+  // .input-group-text {
+  //   border-top-left-radius: 8px !important;
+  //   border-bottom-left-radius: 8px !important;
+  //   border-top-right-radius: 0 !important;
+  //   border-bottom-right-radius: 0 !important;
+  // }
+}
+
+.is-en {
+  .links-nav {
+    left: 0;
+  }
+  .timeline-wrapper:before {
+    left: 1.4%;
+  }
+  p {
+    padding-left: 5px;
+  }
+  textarea {
+    text-align: left !important;
+  }
+  img {
+    &.arrow {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+    }
+  }
+  .form-select {
+    background-position: right 0.2rem center !important;
+  }
+  .main-app {
+    .component_wrapper {
+      margin-left: 16%;
+      @media screen and (max-width: map-get($grid, xl)) {
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .table_deal {
+    .options {
+      margin-right: 0 !important;
+      margin-left: auto !important;
+    }
+  }
+}

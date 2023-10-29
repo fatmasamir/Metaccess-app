@@ -1,0 +1,184 @@
+@import "../../../assets/scss/_variables.scss";
+/* Navbar */
+.Navbar {
+  position: absolute;
+  z-index: 99;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 90%;
+  margin: 0px 5%;
+  .ListNavbar {
+    margin: 0px;
+    padding: 0px;
+    li {
+      position: relative;
+      display: inline-block;
+      cursor: pointer !important;
+      animation-name: rollIn;
+      animation-duration: 2s;
+      cursor: pointer;
+      margin: 0px 10px;
+      img {
+        width: 45px;
+        height: 45px;
+      }
+      .dropdown {
+        position: absolute;
+        z-index: 1000000;
+        display: none;
+        bottom: 30px;
+        width: min-content;
+        background: #000000a3;
+        right: -50px;
+        color: white;
+        text-align: center;
+        padding: 10px 0px;
+        height: auto;
+        border: 3px solid #fe20ce;
+        border-radius: 8px;
+        li {
+          width: max-content;
+        }
+      }
+    }
+    li:hover .dropdown,
+    li .dropdown:hover {
+      display: block;
+    }
+    .IconListNavbar {
+      margin: 0px 20px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .download_App {
+    p {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      font-size: 10px;
+    }
+    a {
+      display: inline-block;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8pxa;
+      border: 1px solid white;
+      padding: 4px 5px;
+      margin: 5px 5px 0px;
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+  .Follow {
+    background: black;
+    border: 1px solid;
+    color: white;
+    padding: 5px 10px;
+    a {
+      color: white !important;
+      text-decoration: none;
+    }
+  }
+}
+.hidden {
+  opacity: 0 !important;
+}
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, -100%) rotate3d(0, 0, 1, -120deg);
+    -webkit-transform: translate3d(0, 0, -100%) rotate3d(0, 0, 1, -120deg);
+    -moz-transform: translate3d(0, 0, -100%) rotate3d(0, 0, 1, -120deg);
+    -ms-transform: translate3d(0, 0, -100%) rotate3d(0, 0, 1, -120deg);
+    -o-transform: translate3d(0, 0, -100%) rotate3d(0, 0, 1, -120deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+/****media****/
+
+@media screen and (max-width: 992px) {
+  .website,
+  .mobile {
+    display: none !important;
+  }
+  .navbar .navbar-btns-icons {
+    display: none !important;
+  }
+  .mobile {
+    border-radius: 8px;
+    background: white;
+  }
+  .navbar .navbar-nav {
+    .nav-link {
+      color: black;
+    }
+  }
+  .navbar .navbar-nav .navbar-btns {
+    display: block;
+  }
+
+  .navbar .mobile {
+    margin: 0px;
+    text-align: center;
+    box-shadow: rgba(177, 177, 177, 0.22) 8px 37px 26px 10px;
+  }
+
+  .navbar .mobile .navbar-btns a {
+    display: inline-block !important;
+    width: 33%;
+  }
+  .navbar .btn-main {
+    color: #04233a;
+  }
+  .navbar .simple-button.send button,
+  .navbar .simple-button.send .btn {
+    width: max-content;
+  }
+  .navbar .container {
+    max-width: 100%;
+  }
+  .light {
+    margin: 10px auto !important;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  .website {
+    display: flex;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
+
+/****is-ar****/
+.is-ar {
+  .navbar .mobile .mobile_sec .close {
+    left: 10%;
+    right: auto;
+  }
+  .navbar .light {
+    margin-left: 0px;
+    margin-right: 1.5rem !important;
+  }
+  .off {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+}

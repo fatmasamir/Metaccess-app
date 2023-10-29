@@ -1,0 +1,21 @@
+.company-page {
+  padding: 20px 0;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2,
+    p {
+      color: var(--first-text-color);
+      text-align: left;
+    }
+  }
+}
+.is-ar {
+  .company-page .content {
+    h2,
+    p {
+      text-align: right;
+    }
+  }
+}

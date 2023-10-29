@@ -1,0 +1,106 @@
+.LightOff {
+  body,
+  .ClientsTestimonials,
+  .accordion-body,
+  .DownloadApp,
+  .form-control,
+  .form-control:focus,
+  input,
+  select,
+  .the_block .card .list > div .content {
+    background: black !important;
+    .header_title,
+    h5,
+    h2,
+    h3,
+    .accordion-body,
+    h4,
+    label,
+    .form-control,
+    input,
+    select,
+    input:focus,
+    select:focus,
+    .form-control:focus,
+    .Fillter .row .choose_Car_condition > div,
+    .the_block .card .list > div .content,
+    div,
+    .Contact_Info .list_contact li a {
+      color: white !important;
+    }
+    ::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+    .simple-button.send button,
+    .simple-button.send .btn,
+    .simple-button.send_blue button,
+    .simple-button.send_blue .btn,
+    .FAQ .fquestion .accordion-button:not(.collapsed),
+    .the_block .card .title .buttons .rating_number {
+      color: black !important;
+      img {
+        filter: brightness(1) invert(0);
+        -webkit-filter: brightness(0);
+      }
+    }
+    .booking .container .bookingSec .simple-button.send .btn,
+    .the_block .card .title .buttons .rating_number {
+      background: white !important;
+    }
+    .carousel__pagination-button::after {
+      background: #404040 !important;
+    }
+    .carousel__pagination-button:hover::after,
+    .carousel__pagination-button--active::after {
+      background: #716d6e !important;
+    }
+  }
+  body .card {
+    background: black;
+    h4,
+    label,
+    h6 {
+      color: white !important;
+    }
+  }
+  body .form-control:focus {
+    border-color: #f5b235;
+  }
+  .MostFaster .social_media img,
+  .auth-form .main-box .ContinueWith .card,
+  .auth-form .main-box .ContinueWith .card:hover p,
+  .Contact_Info .Social_media_contacts li {
+    background: #141414 !important;
+    color: white !important;
+    border-color: #141414;
+  }
+
+  .auth-form .main-box,
+  .auth-form .main-box,
+  .auth-form .main-box .simple-input input,
+  .auth-form .main-box .simple-input select,
+  .auth-form .tab li p,
+  .tab li,
+  .auth-form .vti__dropdown,
+  .auth-form .vue3-reactive-tel-input,
+  .auth-form .logo_box,
+  .otp-form .main-box .style_otp .otp-input,
+  .FormContact,
+  .FormContact input,
+  .FormContact textarea,
+  .FormContact input:focus,
+  .FormContact textarea:focus,
+  input:focus,
+  textarea:focus,
+  .card .row.flex div .form-control:focus {
+    background: black !important;
+    color: white !important;
+  }
+  .auth-form .tab li p.active {
+    color: #f5b235 !important;
+  }
+  body .the_block .card,
+  .specificationsCar .information {
+    border-color: #141414 !important;
+  }
+}

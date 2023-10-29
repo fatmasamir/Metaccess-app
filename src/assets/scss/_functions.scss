@@ -1,0 +1,17 @@
+// -- prefixe
+
+@mixin prefixe($prop, $value, $prefixes: ()) {
+    @each $pre in $prefixes {
+        -#{$pre}-#{$prop}: $value;
+    }
+    #{$prop}: $value;
+}
+
+// -- main box shadow
+@mixin mainBoxShadow() {
+    @include prefixe(
+        box-shadow,
+        0px 0px 18px -10px #03000061,
+        webkit moz o
+    );
+}
