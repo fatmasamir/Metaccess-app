@@ -53,9 +53,11 @@ const FunChooseTabName = (tabName: String) => {
 <style lang="scss" scoped>
 @import "../Oli/Styling.scss";
 .Journey {
-  background: url("../../../../assets/images/journey.png") top center;
-  height: max-content;
+  background: url("../../../../assets/images/journey-2.jpg") top center;
+  height: auto;
   background-size: contain;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding-bottom: 15%;
   .content-left {
     margin-left: auto;

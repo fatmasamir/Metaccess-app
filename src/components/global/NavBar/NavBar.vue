@@ -21,7 +21,11 @@ const FunChooseTabName = (tabName: String) => {
 // FunChooseTabName
 const changeIconNav = () => {
   IconListNavbar.value = !IconListNavbar.value;
-  emit("TabsName", "start");
+  if (IconListNavbar.value) {
+    emit("TabsName", "start");
+  } else {
+    emit("TabsName", "");
+  }
 };
 
 // onMounted
@@ -31,54 +35,60 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="Navbar">
+  <div class="Navbar" :class="IconListNavbar ? 'navbar-open' : ''">
     <div class="Follow" :class="IconListNavbar ? '' : 'hidden'">
       <router-link to="/">Follow Us </router-link>
     </div>
     <ul class="ListNavbar">
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <img src="../../../assets/images/oli.svg" />
+        <span><img src="../../../assets/images/oli_icon.svg" /></span>
         <ul class="dropdown">
           <li @click="FunChooseTabName('oli')">Who is Oli</li>
           <li @click="FunChooseTabName('story')">Story</li>
           <li @click="FunChooseTabName('Journey')">Journey</li>
         </ul>
+        <p class="name">oli</p>
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <img src="../../../assets/images/blaxces.svg" />
+        <span><img src="../../../assets/images/blaxces_icon.svg" /></span>
         <ul class="dropdown">
           <li @click="FunChooseTabName('Blacxes')">What is Blacxes</li>
           <li @click="FunChooseTabName('Utilites')">Utilites</li>
         </ul>
+        <p class="name">blaxces</p>
       </li>
       <li
         :class="IconListNavbar ? '' : 'hidden'"
         @click="FunChooseTabName('acces_coin')"
       >
-        <img src="../../../assets/images/acces_coin.svg" />
+        <span><img src="../../../assets/images/acces_coin_icon.svg" /></span>
+        <p class="name">acces coin</p>
       </li>
       <li class="IconListNavbar" @click="changeIconNav()">
         <img src="../../../assets/images/openMenuBtn.svg" />
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <img src="../../../assets/images/news.svg" />
+        <span><img src="../../../assets/images/newsIcon.svg" /></span>
         <ul class="dropdown">
           <li @click="FunChooseTabName('feed')">Feed</li>
           <li @click="FunChooseTabName('marketAnalises')">Market Analises</li>
         </ul>
+        <p class="name">news</p>
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <img src="../../../assets/images/team.svg" />
+        <span><img src="../../../assets/images/teams_icon.svg" /></span>
         <ul class="dropdown">
           <li @click="FunChooseTabName('team')">Metacces team</li>
           <li @click="FunChooseTabName('bepartner')">Be a partner</li>
         </ul>
+        <p class="name">teams</p>
       </li>
       <li
         :class="IconListNavbar ? '' : 'hidden'"
         @click="FunChooseTabName('more')"
       >
-        <img src="../../../assets/images/more.svg" />
+        <span><img src="../../../assets/images/more_icon.svg" /></span>
+        <p class="name">more</p>
       </li>
     </ul>
     <div class="download_App" :class="IconListNavbar ? '' : 'hidden'">

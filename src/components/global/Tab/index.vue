@@ -18,12 +18,12 @@
   h4 {
     text-align: center;
     color: white;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .theblock {
     width: 70%;
-    height: 73vh;
-    margin: 2% auto;
+    height: 76vh;
+    margin: 2% auto 0px;
     border: 10px solid;
     border-width: 10px;
     // border-image: url("@/assets/images/rim.svg");
@@ -32,6 +32,13 @@
     border-radius: 20px;
     border: 2px solid #fe20ce;
     overflow-y: auto;
+  }
+}
+@media screen and (max-width: 1486px) {
+  .ContentTabs .theblock {
+    bottom: 15px;
+    width: 80%;
+    margin: 1.5% auto 0px;
   }
 }
 </style>
