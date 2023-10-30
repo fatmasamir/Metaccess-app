@@ -131,8 +131,7 @@ onMounted(() => {
     max-width: 100%;
     img {
       width: 100%;
-      height: 95%;
-      margin: 1% auto;
+      height: 100%;
     }
     .icon {
       position: absolute;
