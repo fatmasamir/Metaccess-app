@@ -35,9 +35,14 @@ const OpenImage = (value: String) => {
   <section class="Pages">
     <div class="background">
       <img
+        src="@/assets/images/gate_blur.png"
+        class="HeaderImage"
+        v-if="NameTab"
+      />
+      <img
         src="@/assets/images/CompositeLayer.png"
         class="HeaderImage"
-        :class="NameTab ? 'blur' : ''"
+        v-else
       />
     </div>
     <NavBar @TabsName="TabsName" :ShowItem="ShowItem" />

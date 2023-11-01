@@ -14,14 +14,14 @@ const FunChooseTabName = (tabName: String) => {
   <Tab
     ><div class="tabs_content marketAnalises">
       <ul class="subNavbar">
-        <li @click="FunChooseTabName('feed')">Feed</li>
+        <li @click="FunChooseTabName('feed')"><p>Feed</p></li>
         <li @click="FunChooseTabName('marketAnalises')" class="active">
-          Market Analises
+          <p>Market Analises</p>
         </li>
       </ul>
       <div class="content">
         <span>Market Analysis</span>
-        <h1>It`s time for<span>creation</span></h1>
+        <h1>It's time for<span>creation</span></h1>
         <p>
           Lorem ipsum, dolor sit amet adipisicing elit adipisicing elit. Quam
           eius Lorem ipsum, dolor sit amet adipisicing elit adipisicing elit.
@@ -38,7 +38,6 @@ const FunChooseTabName = (tabName: String) => {
   .content {
     margin-left: auto;
     margin-right: 5%;
-    padding-top: 10%;
   }
 }
 </style>

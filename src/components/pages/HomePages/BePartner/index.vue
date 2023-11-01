@@ -14,9 +14,9 @@ const FunChooseTabName = (tabName: String) => {
   <Tab
     ><div class="tabs_content BePartner">
       <ul class="subNavbar">
-        <li @click="FunChooseTabName('team')">Metacces team</li>
+        <li @click="FunChooseTabName('team')"><p>Metacces team</p></li>
         <li @click="FunChooseTabName('bepartner')" class="active">
-          Be a partner
+          <p>Be a partner</p>
         </li>
       </ul>
       <div class="content">

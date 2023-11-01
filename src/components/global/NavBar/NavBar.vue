@@ -41,19 +41,27 @@ onMounted(() => {
     </div>
     <ul class="ListNavbar">
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <span><img src="../../../assets/images/oli_icon.svg" /></span>
+        <span
+          ><img
+            src="../../../assets/images/oli_icon.svg"
+            @click="FunChooseTabName('oli')"
+        /></span>
         <ul class="dropdown">
-          <li @click="FunChooseTabName('oli')">Who is Oli</li>
-          <li @click="FunChooseTabName('story')">Story</li>
-          <li @click="FunChooseTabName('Journey')">Journey</li>
+          <li @click="FunChooseTabName('oli')"><p>Who is Oli</p></li>
+          <li @click="FunChooseTabName('story')"><p>Story</p></li>
+          <li @click="FunChooseTabName('Journey')"><p>Journey</p></li>
         </ul>
         <p class="name">oli</p>
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <span><img src="../../../assets/images/blaxces_icon.svg" /></span>
+        <span
+          ><img
+            src="../../../assets/images/blaxces_icon.svg"
+            @click="FunChooseTabName('Blacxes')"
+        /></span>
         <ul class="dropdown">
-          <li @click="FunChooseTabName('Blacxes')">What is Blacxes</li>
-          <li @click="FunChooseTabName('Utilites')">Utilites</li>
+          <li @click="FunChooseTabName('Blacxes')"><p>What is Blacxes</p></li>
+          <li @click="FunChooseTabName('Utilites')"><p>Utilites</p></li>
         </ul>
         <p class="name">blaxces</p>
       </li>
@@ -68,18 +76,30 @@ onMounted(() => {
         <img src="../../../assets/images/openMenuBtn.svg" />
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <span><img src="../../../assets/images/newsIcon.svg" /></span>
+        <span
+          ><img
+            src="../../../assets/images/newsIcon.svg"
+            @click="FunChooseTabName('feed')"
+        /></span>
         <ul class="dropdown">
-          <li @click="FunChooseTabName('feed')">Feed</li>
-          <li @click="FunChooseTabName('marketAnalises')">Market Analises</li>
+          <li @click="FunChooseTabName('feed')"><p>Feed</p></li>
+          <li @click="FunChooseTabName('marketAnalises')">
+            <p>Market Analises</p>
+          </li>
         </ul>
         <p class="name">news</p>
       </li>
       <li :class="IconListNavbar ? '' : 'hidden'">
-        <span><img src="../../../assets/images/teams_icon.svg" /></span>
+        <span
+          ><img
+            src="../../../assets/images/teams_icon.svg"
+            @click="FunChooseTabName('team')"
+        /></span>
         <ul class="dropdown">
-          <li @click="FunChooseTabName('team')">Metacces team</li>
-          <li @click="FunChooseTabName('bepartner')">Be a partner</li>
+          <li @click="FunChooseTabName('team')"><p>Metacces team</p></li>
+          <li @click="FunChooseTabName('bepartner')">
+            <p>Be a partner</p>
+          </li>
         </ul>
         <p class="name">teams</p>
       </li>

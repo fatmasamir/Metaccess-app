@@ -14,9 +14,13 @@ const FunChooseTabName = (tabName: String) => {
   <Tab
     ><div class="tabs_content Journey">
       <ul class="subNavbar">
-        <li @click="FunChooseTabName('oli')">Who is Oli</li>
-        <li @click="FunChooseTabName('story')">Story</li>
-        <li @click="FunChooseTabName('Journey')" class="active">Journey</li>
+        <li @click="FunChooseTabName('oli')">
+          <p>Who is Oli</p>
+        </li>
+        <li @click="FunChooseTabName('story')"><p>Story</p></li>
+        <li @click="FunChooseTabName('Journey')" class="active">
+          <p>Journey</p>
+        </li>
       </ul>
       <div class="content content-top">
         <span>Feed</span>
@@ -59,16 +63,35 @@ const FunChooseTabName = (tabName: String) => {
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 15%;
+  .content {
+    padding-top: 200px;
+  }
   .content-left {
     margin-left: auto;
     margin-right: 5%;
-    padding-top: 12%;
+    h1 span {
+      color: #b42764;
+    }
   }
   .content-top {
     padding-top: 10%;
   }
   .content-bottom {
     padding-top: 20%;
+    h1 span {
+      color: #137ea7;
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .Journey .content {
+    padding-top: 10%;
+  }
+  .Journey .content-left {
+    padding-top: 17%;
+  }
+  .Journey .content-bottom {
+    padding-top: 30%;
   }
 }
 </style>

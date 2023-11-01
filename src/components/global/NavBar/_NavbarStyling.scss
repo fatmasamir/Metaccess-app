@@ -16,9 +16,8 @@
     li {
       position: relative;
       display: inline-block;
-      cursor: pointer !important;
       animation-name: rollIn;
-      animation-duration: 1s;
+      animation-duration: 0.3s;
       color: #4f6172;
       cursor: pointer;
       padding: 0px 10px;
@@ -28,6 +27,7 @@
         display: block;
         border-radius: 100%;
         padding: 10px 5px;
+        font-size: large !important;
         border: 1px solid #cac9d558;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
@@ -73,11 +73,20 @@
       }
     }
     li:hover {
+      cursor: pointer !important;
       transform: scale(1.1);
-      transition: 1s all ease-in-out;
+      transition: 0.3s all ease-in-out;
+      -webkit-transition: 0.3s all ease-in-out;
+      -moz-transition: 0.3s all ease-in-out;
+      -ms-transition: 0.3s all ease-in-out;
+      -o-transition: 0.3s all ease-in-out;
     }
     li:hover span {
       background: #cac9d5;
+      img {
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+      }
     }
     li:hover .dropdown,
     li .dropdown:hover,
@@ -230,6 +239,119 @@
 // }
 @media screen and (max-width: 1486px) {
   .navbar-open {
-    bottom: 15px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .Navbar {
+    bottom: 13%;
+  }
+  .navbar-open {
+    bottom: 30px;
+  }
+  .Navbar .ListNavbar li .dropdown {
+    p {
+      font-size: 15px !important;
+    }
+  }
+}
+@media screen and (min-width: 2500px) {
+  .navbar-open {
+    bottom: 60px;
+  }
+  .Navbar .ListNavbar .IconListNavbar img {
+    width: 100px;
+    height: 100px;
+  }
+  .Navbar .ListNavbar li span {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .Navbar .ListNavbar li .dropdown {
+    padding: 10px 0px 50px;
+    bottom: 85px;
+    p {
+      font-size: 30px !important;
+    }
+  }
+}
+@media screen and (min-width: 3840px) {
+  .Navbar .ListNavbar li span {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  .Navbar .ListNavbar li {
+    padding: 0px 50px;
+  }
+  .Navbar .ListNavbar li .dropdown {
+    padding: 10px 0px 50px;
+    bottom: 85px;
+    p {
+      font-size: 40px !important;
+    }
+  }
+  .Navbar .download_App a img {
+    width: 60px;
+    height: 60px;
+  }
+  .Navbar .download_App a {
+    margin: 5px 15px 0px;
+  }
+  .Navbar {
+    bottom: 13%;
+    .ListNavbar .IconListNavbar img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .navbar-open {
+    bottom: 100px;
+    .ListNavbar .IconListNavbar img {
+      bottom: auto;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+@media screen and (min-width: 5000px) {
+  .Navbar .ListNavbar li span {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .Navbar .ListNavbar li {
+    padding: 0px 50px;
+  }
+  .Navbar .ListNavbar li .dropdown {
+    bottom: 85px;
+    padding: 10px 0px 150px;
+    p {
+      font-size: 60px !important;
+    }
+  }
+  .Navbar .download_App a img {
+    width: 80px;
+    height: 80px;
+  }
+  .Navbar .download_App a {
+    margin: 5px 15px 0px;
+  }
+  .Navbar {
+    bottom: 13%;
+    .ListNavbar .IconListNavbar img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .navbar-open {
+    bottom: 140px;
+    .ListNavbar .IconListNavbar img {
+      bottom: auto;
+      width: 200px;
+      height: 200px;
+    }
   }
 }

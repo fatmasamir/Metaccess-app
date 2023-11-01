@@ -14,8 +14,10 @@ const FunChooseTabName = (tabName: String) => {
   <Tab
     ><div class="tabs_content Feed">
       <ul class="subNavbar">
-        <li @click="FunChooseTabName('feed')" class="active">Feed</li>
-        <li @click="FunChooseTabName('marketAnalises')">Market Analises</li>
+        <li @click="FunChooseTabName('feed')" class="active"><p>Feed</p></li>
+        <li @click="FunChooseTabName('marketAnalises')">
+          <p>Market Analises</p>
+        </li>
       </ul>
       <div class="content">
         <span>Feed</span>

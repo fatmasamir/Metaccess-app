@@ -9,28 +9,30 @@
     width: 35%;
     h1 {
       color: white;
-      font-size: 60px;
-      font-size: bold;
       line-height: 1;
+      margin-bottom: 10px;
+      span {
+        font-size: 60px !important;
+      }
     }
     span {
-      color: #fe20ce;
+      color: #ff1fce;
       display: block;
+      padding-bottom: 1s0px;
     }
     p {
       color: white;
-      font-size: 15px;
       line-height: 1.4;
     }
     a {
       color: white;
-      background: #fe20ce;
+      background: #ff1fce;
       font-size: 13px;
       display: block;
       width: max-content;
       border-radius: 8px;
       text-decoration: none;
-      padding: 2px;
+      padding: 5px;
       margin-left: auto;
     }
   }
@@ -43,6 +45,12 @@
   }
 
   .right {
+    font-size: 45px;
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: inherit;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -51,7 +59,7 @@
   }
   .subNavbar {
     color: rgba(255, 255, 255, 0.532);
-    padding: 20px 0px 0px;
+    padding: 20px 10px 0px;
     li {
       display: inline-block;
       margin: 0px 15px;
@@ -63,5 +71,91 @@
     .active {
       color: white;
     }
+  }
+}
+@media screen and (min-width: 2500pxs) {
+  .tabs_content .subNavbar {
+    padding: 40px 30px 0px;
+    li {
+      padding-left: 15px;
+    }
+  }
+}
+@media screen and (min-width: 2400px) {
+  .tabs_content .content h1 {
+    margin-bottom: 30px;
+    span {
+      font-size: 110px !important;
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .tabs_content .content h1 {
+    margin-bottom: 30px;
+    span {
+      font-size: 80px !important;
+    }
+  }
+}
+@media screen and (min-width: 3840px) {
+  .tabs_content .content h1 {
+    margin-bottom: 30px;
+    span {
+      font-size: 175px !important;
+    }
+  }
+  .tabs_content .subNavbar {
+    padding: 50px;
+    li {
+      padding-left: 30px;
+    }
+  }
+  .tabs_content .content a {
+    padding-right: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 10px 34px;
+    .right {
+      width: 30px;
+      height: 35px;
+    }
+  }
+}
+@media screen and (min-width: 5000px) {
+  .ContentTabs .theblock {
+    bottom: 350px;
+  }
+  .tabs_content .content {
+    padding-top: 10%;
+  }
+  .tabs_content .subNavbar {
+    padding: 50px;
+    li {
+      padding-left: 30px;
+    }
+  }
+  .is-en p {
+    padding-left: 35px;
+  }
+  .tabs_content .content h1 {
+    margin-bottom: 30px;
+    span {
+      font-size: 250px !important;
+    }
+  }
+  .tabs_content .content a {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 10px 34px;
+  }
+  .tabs_content .right {
+    width: 38px;
+    height: 50px;
   }
 }
