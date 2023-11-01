@@ -27,4 +27,10 @@ onMounted(() => {
     height: 40px;
   }
 }
+@media screen and (min-width: 2500px) {
+  .loading span {
+    width: 100px;
+    height: 100px;
+  }
+}
 </style>

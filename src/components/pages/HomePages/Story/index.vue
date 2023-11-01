@@ -127,7 +127,7 @@ const OpenImage = (item: String) => {
       }
       img {
         width: 100%;
-        height: 18vh;
+        height: 40%;
       }
       .number {
         position: absolute;

@@ -29,14 +29,20 @@
     margin: auto;
     bottom: 100px;
     left: 15%;
-    border-width: 10px;
+    // border-width: 25px;
     // border-image: url("@/assets/images/rim.svg");
-    // border-image-slice: 20;
+    // border-image-slice: 28;
+    // border-radius: 39px;
     background: #00000085;
-    border-radius: 15px;
+    border-radius: 39px;
     border: 2px solid #fe20ce;
     overflow-y: auto;
   }
+}
+.Start .theblock {
+  border-width: 25px;
+  border-image: url("../../../assets/images/rim.svg");
+  border-image-slice: 28 !important;
 }
 @media screen and (max-width: 1486px) {
   .ContentTabs .theblock {
